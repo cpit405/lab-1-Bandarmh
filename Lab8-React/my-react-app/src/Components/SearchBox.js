@@ -9,11 +9,11 @@ export default function SearchBox(){
         if(event.key === 'Enter' && CityName.trim().length >2){
             const URL = "http://api.weatherapi.com/v1/current.json?key=51236aca09894253905162316231705&q=" + CityName + "&aqi=n";
             try{ 
-                const respons = await fetch(URL, {method: 'GET', headers: {Accept: 'application/json'}});
+                const respons = awaitfetch(URL, {method: 'GET', headers: {Accept: 'application/json'}});
                 if(!response.ok){
                 throw new Error (`Error failed to send an HTTP Get Request: ${response.status}`);
             }
-            const dataa = await response.json();
+            const dataa = awaitresponse.json();
             console.log(data.forecast.forecastday);
             setforecasts(data.forecast.forecastday);
         }
