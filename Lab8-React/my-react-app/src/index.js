@@ -3,9 +3,7 @@ import ReactDOM from 'react-dom/client';
 
 //the new thing that I added 
 import {
-  BrowserRouter,
-  Routes,
-  Route,
+  BrowserRouter, Routes, Route
 } from "react-router-dom"; //.
 
 import Layout from './pages/Layout';
