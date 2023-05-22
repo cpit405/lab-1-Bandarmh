@@ -6,8 +6,8 @@ die ("<h1>Error: 405 Method Not Allowed</h1>");
 
  // Clean the input (remove extra whitespaces
  $Nname = trim($_POST ["uname"]) ;
- $email = trim($_POST(["email"]);
- $comment = trim($_POST(["ucomment"]);
+ $email = trim($_POST(["email"]));
+ $comment = trim($_POST(["ucomment"]));
 
  if (empty($Nname) || empty($email) || empty($comment)) {
 
