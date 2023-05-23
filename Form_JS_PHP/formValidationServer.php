@@ -32,10 +32,11 @@ echo "<p>comment is valid</p>";
 echo "<p>Error: Invalid writen must be at most 150 charecter</p>";
  }
 
-
 // Email validation
-  (filter_var($email, FILTER_VALIDATE_EMAIL)) {
-echo "«p>Email address is valid.</p>";
+  if(filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    echo "<p> Email address is valid. </P>";
    } else {
-echo "«p>Error: Invalid email address.</p>":
+echo "<p>Error: Invalid email address.</p>";
    }
+   }
+   ?>
