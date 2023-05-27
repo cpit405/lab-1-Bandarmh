@@ -3,6 +3,7 @@
 
 header ($_SERVER ["SERVER_PROTOCOL"]." 405 Method Not Allowed", true, 405);
 die ("<h1>Error: 405 Method Not Allowed</h1>");
+ }
 
  // Clean the input (remove extra whitespaces
  $Nname = trim($_POST ["uname"]) ;
@@ -37,6 +38,5 @@ echo "<p>Error: Invalid writen must be at most 150 charecter</p>";
     echo "<p> Email address is valid. </P>";
    } else {
 echo "<p>Error: Invalid email address.</p>";
-   }
    }
    ?>

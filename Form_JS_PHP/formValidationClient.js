@@ -1,7 +1,7 @@
 function validateForm(event) {
-    let Nname = document. forms ["myForm" ] ["uname"].value;
-    let email = document. forms ["myForm"] ["email"].value;
-    let comment = document. forms ["myForm"] ["ucomment"].value;
+    let Nname = document.forms ["myForm" ] ["uname"].value;
+    let email = document.forms ["myForm"] ["email"].value;
+    let comment = document.forms ["myForm"] ["ucomment"].value;
 
     let errorMessageElem = document.getElementById ("error-message");
     errorMessageElem.innerHTML = "";
@@ -10,13 +10,13 @@ function validateForm(event) {
     //name validation
     const userNameRegExp = /^{8, 32}$/;
     if (Nname == "" || !userNameRegExp.test(Nname)) {
-    errorMessageElem. innerHTML += "<p>Invalid user name. User name must be between 8 and 32 charecter</p>";
+    errorMessageElem.innerHTML += "<p>Invalid user name. User name must be between 8 and 32 charecter</p>";
     isValid = false;
     }
     //comment validation
     const commentRegExp = /^{0, 150}$/;
     if (comment == "" || !userNameRegExp.test(comment)) {
-    errorMessageElem. innerHTML += "<p>Invalid This comment box is reqierd</p>";
+    errorMessageElem.innerHTML += "<p>Invalid This comment box is reqierd</p>";
     isValid = false;
     }
     // Email regular expression pattern (RFC 5322 Official Standard)
