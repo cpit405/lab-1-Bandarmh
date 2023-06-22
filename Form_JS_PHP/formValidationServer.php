@@ -1,6 +1,4 @@
 <?php
-
-
 $name = $_POST['uname'];
 $email = $_POST['email'];
 $comment = $_POST['comment'];
