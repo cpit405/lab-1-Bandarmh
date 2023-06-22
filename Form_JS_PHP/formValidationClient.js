@@ -16,11 +16,12 @@ function validateForm(event) {
       return;
     }
   
-    if (commentInput.value.length > 150) {
-      errorMessage.innerText = 'Please limit your comment to 150 characters or less.';
-      event.preventDefault();
-      return;
+    if (commentInput.value.length == 0 || commentInput.value.length > 150 ) {
+        errorMessage.innerText = 'Please limit your comment to 150 characters or less.';
+        event.preventDefault();
+     return;
     }
+   
   
     errorMessage.innerText = '';
   }
